@@ -28,7 +28,7 @@ times = tree.xpath('//time/text()')
 titles = tree.xpath('//span[@class="title"]/text()')
 
 # fill email file header
-email_file = '/home/hakim/Code/Python/node-scraping/email.txt'
+email_file = '/home/hakim/Code/Python/scraping-scripts/email.txt'
 f = open(email_file, 'w')
 f.write('To: %s\n' % recipient)
 f.write('From: %s\n' % sender)
