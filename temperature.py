@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # Get temperature in the country given as argument
 # from http://openweathermap.org
 # author: h4k1m

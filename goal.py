@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # Get football(soccer) news from goal.com
 # using lxml & requests python modules
 # author h4k1m
