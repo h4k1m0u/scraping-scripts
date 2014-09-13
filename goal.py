@@ -14,9 +14,11 @@ import sys
 import socket
 import os
 
+os.system('logger [Goal.com Breaking-news] Grabbing news.')
+
 # get email recipient (cmdline arg) & sender (hostname)
 if len(sys.argv) == 1:
-    print 'Please give recipient of the email!'
+    os.system('logger Missing recipient of the email')
     exit()
 sender = socket.gethostname()
 recipient = sys.argv[1]
@@ -28,7 +30,7 @@ times = tree.xpath('//time/text()')
 titles = tree.xpath('//span[@class="title"]/text()')
 
 # fill email file header
-email_file = '/home/hakim/Code/Python/scraping-scripts/email.txt'
+email_file = '/tmp/email.txt'
 f = open(email_file, 'w')
 f.write('To: %s\n' % recipient)
 f.write('From: %s\n' % sender)

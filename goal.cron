@@ -1,0 +1,2 @@
+# run hourly
+0 * * * * /usr/local/bin/python /home/hakim/Code/Python/scraping-scripts/goal.py h.benoudjit@gmail.com
