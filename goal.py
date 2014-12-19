@@ -24,7 +24,7 @@ sender = socket.gethostname()
 recipient = sys.argv[1]
 
 # get breaking news from goal.com
-page = requests.get('http://www.goal.com/de/module/breaking-news/content')
+page = requests.get('http://www.goal.com/en/module/breaking-news/content')
 tree = html.fromstring(page.text)
 times = tree.xpath('//time/text()')
 titles = tree.xpath('//span[@class="title"]/text()')
